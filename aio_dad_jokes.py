@@ -22,12 +22,6 @@ async def shite_advice():
         async with session.get(url=shite_advice_kingdom, headers=HEADERS) as response_boi:             
             return await response_boi.json(content_type='text/html')
 
-
-def dad_joke_runner():
-    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())   
-    bob = asyncio.run(dad_jokko())        
-    print(bob['joke'])    
-
 @bot.command(name='joke')
 @commands.cooldown(1, 10, commands.BucketType.user)
 async def dad_joke(ctx): 
