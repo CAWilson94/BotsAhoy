@@ -1,8 +1,9 @@
-import aiohttp
 import asyncio
-
 import os
+
+import aiohttp
 from discord.ext import commands
+
 from token_bot import DAD_JOKE_TOKEN
 
 bot = commands.Bot(command_prefix='!')
@@ -33,7 +34,6 @@ async def dad_joke(ctx):
 async def advice_please(ctx): 
     json = await shite_advice()
     await ctx.send(json['slip']['advice'])
-
 
 @bot.event
 async def on_ready(): 
