@@ -3,7 +3,7 @@ import asyncio
 
 import os
 from discord.ext import commands
-from token import DAD_JOKE_TOKEN
+from token_bot import DAD_JOKE_TOKEN
 
 bot = commands.Bot(command_prefix='!')
 
