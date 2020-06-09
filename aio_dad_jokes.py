@@ -20,7 +20,7 @@ async def dad_jokko():
 async def shite_advice(): 
     async with aiohttp.ClientSession() as session: 
         async with session.get(url=shite_advice_kingdom, headers=HEADERS) as response_boi:             
-            return await response_boi.json()
+            return await response_boi.json(content_type='text/html')
 
 
 def dad_joke_runner():
