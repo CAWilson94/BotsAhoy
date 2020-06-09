@@ -43,6 +43,6 @@ async def advice_please(ctx):
 
 @bot.event
 async def on_ready(): 
-    print(f'{bot.user.name} has connected to Discord!')
+    print(f'{bot.user.name} has connected to Discord praise be!')
 
 bot.run(DAD_JOKE_TOKEN)
